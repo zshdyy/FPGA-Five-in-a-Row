@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun May 18 22:38:44 2025
+# Process ID: 21036
+# Current directory: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1
+# Command line: vivado.exe -log vga_ctrl.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source vga_ctrl.tcl -notrace
+# Log file: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.vdi
+# Journal file: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source vga_ctrl.tcl -notrace

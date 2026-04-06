@@ -1,0 +1,430 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun May 18 19:26:52 2025
+# Process ID: 16528
+# Current directory: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18904 C:\Users\Hi\Downloads\Nexys4DDRVGAMouseOverlay\Nexys4DDRVGAMouseOverlay\Nexys4DDRVGAMouseOverlay.xpr
+# Log file: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/vivado.log
+# Journal file: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Xilinx/project/Nexys4DDRVGAMouseOverlay' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1126.867 ; gain = 0.000
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: vga_ctrl
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1631.527 ; gain = 244.527
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'vga_ctrl' [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/vga_ctrl.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'game_controller' [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/new/game_controller.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'game_controller' (1#1) [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/new/game_controller.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'piece_render' [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/new/piece_render.vhd:22]
+WARNING: [Synth 8-614] signal 'board_state' is read in the process but is not in the sensitivity list [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/new/piece_render.vhd:44]
+WARNING: [Synth 8-614] signal 'piece_x' is read in the process but is not in the sensitivity list [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/new/piece_render.vhd:44]
+WARNING: [Synth 8-614] signal 'piece_y' is read in the process but is not in the sensitivity list [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/new/piece_render.vhd:44]
+WARNING: [Synth 8-614] signal 'last_move_x' is read in the process but is not in the sensitivity list [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/new/piece_render.vhd:44]
+WARNING: [Synth 8-614] signal 'last_move_y' is read in the process but is not in the sensitivity list [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/new/piece_render.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'piece_render' (2#1) [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/new/piece_render.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'game_status_display' [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/new/game_status_display.vhd:20]
+WARNING: [Synth 8-614] signal 'x_pos' is read in the process but is not in the sensitivity list [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/new/game_status_display.vhd:28]
+WARNING: [Synth 8-614] signal 'y_pos' is read in the process but is not in the sensitivity list [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/new/game_status_display.vhd:28]
+WARNING: [Synth 8-614] signal 'game_status' is read in the process but is not in the sensitivity list [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/new/game_status_display.vhd:28]
+WARNING: [Synth 8-614] signal 'current_player' is read in the process but is not in the sensitivity list [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/new/game_status_display.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'game_status_display' (3#1) [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/new/game_status_display.vhd:20]
+WARNING: [Synth 8-5640] Port 'locked' is missing in component declaration [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/vga_ctrl.vhd:84]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/.Xil/Vivado-16528-LAPTOP-HDLG7MJ4/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'clk_wiz_0_inst' of component 'clk_wiz_0' [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/vga_ctrl.vhd:274]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/.Xil/Vivado-16528-LAPTOP-HDLG7MJ4/realtime/clk_wiz_0_stub.vhdl:15]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 148500000 - type: integer 
+	Parameter CHECK_PERIOD_MS bound to: 500 - type: integer 
+	Parameter TIMEOUT_PERIOD_MS bound to: 100 - type: integer 
+INFO: [Synth 8-3491] module 'MouseCtl' declared at 'C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/MouseCtl.vhd:179' bound to instance 'Inst_MouseCtl' of component 'MouseCtl' [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/vga_ctrl.vhd:285]
+INFO: [Synth 8-638] synthesizing module 'MouseCtl' [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/MouseCtl.vhd:208]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 148500000 - type: integer 
+	Parameter CHECK_PERIOD_MS bound to: 500 - type: integer 
+	Parameter TIMEOUT_PERIOD_MS bound to: 100 - type: integer 
+INFO: [Synth 8-3491] module 'Ps2Interface' declared at 'C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/Ps2Interface.vhd:152' bound to instance 'Inst_Ps2Interface' of component 'Ps2Interface' [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/MouseCtl.vhd:370]
+INFO: [Synth 8-638] synthesizing module 'Ps2Interface' [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/Ps2Interface.vhd:180]
+INFO: [Synth 8-256] done synthesizing module 'Ps2Interface' (4#1) [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/Ps2Interface.vhd:180]
+INFO: [Synth 8-256] done synthesizing module 'MouseCtl' (5#1) [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/MouseCtl.vhd:208]
+INFO: [Synth 8-3491] module 'MouseDisplay' declared at 'C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/MouseDisplay.vhd:99' bound to instance 'Inst_MouseDisplay' of component 'MouseDisplay' [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/vga_ctrl.vhd:463]
+INFO: [Synth 8-638] synthesizing module 'MouseDisplay' [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/MouseDisplay.vhd:129]
+WARNING: [Synth 8-614] signal 'ypos' is read in the process but is not in the sensitivity list [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/MouseDisplay.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'MouseDisplay' (6#1) [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/MouseDisplay.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'vga_ctrl' (7#1) [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/imports/Basys3_Basic_Demo_1/vga_ctrl.vhd:41]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1702.320 ; gain = 315.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1722.148 ; gain = 335.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1722.148 ; gain = 335.148
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clk_wiz_0_inst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 1743.730 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0_inst/inst'
+Finished Parsing XDC File [c:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0_inst/inst'
+Parsing XDC File [c:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0_inst/inst'
+Finished Parsing XDC File [c:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0_inst/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_ctrl_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vga_ctrl_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/constrs_1/imports/XDC/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.srcs/constrs_1/imports/XDC/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1853.469 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:24 . Memory (MB): peak = 2008.543 ; gain = 621.543
+28 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2008.543 ; gain = 881.676
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+[Sun May 18 19:28:18 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 20
+[Sun May 18 19:29:46 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Sun May 18 19:32:27 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/synth_1/runme.log
+[Sun May 18 19:32:27 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 2051.094 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292747978A
+open_hw_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3560.055 ; gain = 1508.961
+set_property PROGRAM.FILE {C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 3597.566 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292747978A
+set_property PROGRAM.FILE {C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292747978A
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 3628.727 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292747978A
+set_property PROGRAM.FILE {C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292747978A
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Sun May 18 20:11:51 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/synth_1/runme.log
+[Sun May 18 20:11:51 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/runme.log
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 3628.727 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292747978A
+set_property PROGRAM.FILE {C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Sun May 18 22:04:22 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/synth_1/runme.log
+[Sun May 18 22:04:22 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Sun May 18 22:18:17 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/synth_1/runme.log
+[Sun May 18 22:18:17 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 3645.938 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292747978A
+set_property PROGRAM.FILE {C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Sun May 18 22:28:17 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/synth_1/runme.log
+[Sun May 18 22:28:17 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Sun May 18 22:35:27 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/synth_1/runme.log
+[Sun May 18 22:35:27 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+[Sun May 18 22:36:05 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 20
+[Sun May 18 22:38:36 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Sun May 18 22:43:10 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Sun May 18 23:00:14 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/synth_1/runme.log
+[Sun May 18 23:00:14 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292747978A
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 3659.031 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292747978A
+set_property PROGRAM.FILE {C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Sun May 18 23:13:19 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/synth_1/runme.log
+[Sun May 18 23:13:19 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292747978A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292747978A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Hi/Downloads/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay/Nexys4DDRVGAMouseOverlay.runs/impl_1/vga_ctrl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 18 23:32:48 2025...

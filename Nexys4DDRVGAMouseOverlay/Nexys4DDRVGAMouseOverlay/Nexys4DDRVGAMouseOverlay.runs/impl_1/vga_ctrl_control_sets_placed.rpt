@@ -1,0 +1,99 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sun May 18 23:17:41 2025
+| Host         : LAPTOP-HDLG7MJ4 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file vga_ctrl_control_sets_placed.rpt
+| Design       : vga_ctrl
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    21 |
+|    Minimum number of control sets                        |    21 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    60 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    21 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     4 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     6 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             248 |           92 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             117 |           34 |
+| Yes          | No                    | No                     |              95 |           36 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              48 |           13 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+--------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+--------------+
+|          Clock Signal         |                         Enable Signal                        |                       Set/Reset Signal                       | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------+--------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+--------------+
+|  clk_wiz_0_inst/inst/clk_out1 |                                                              | game_ctrl_inst/click_cnt[2]_i_1_n_0                          |                1 |              4 |         4.00 |
+|  clk_wiz_0_inst/inst/clk_out1 | Inst_MouseCtl/Inst_Ps2Interface/shift_frame                  | Inst_MouseCtl/Inst_Ps2Interface/reset_bit_count              |                1 |              4 |         4.00 |
+|  clk_wiz_0_inst/inst/clk_out1 | Inst_MouseCtl/Inst_Ps2Interface/FSM_onehot_state_reg[0]_2    |                                                              |                2 |              5 |         2.50 |
+|  clk_wiz_0_inst/inst/clk_out1 | Inst_MouseCtl/Inst_Ps2Interface/delay_63clk_count[6]_i_2_n_0 | Inst_MouseCtl/Inst_Ps2Interface/delay_63clk_count[6]_i_1_n_0 |                2 |              7 |         3.50 |
+|  clk_wiz_0_inst/inst/clk_out1 | Inst_MouseCtl/Inst_Ps2Interface/FSM_onehot_state_reg[0]_0    |                                                              |                2 |              8 |         4.00 |
+|  clk_wiz_0_inst/inst/clk_out1 | Inst_MouseCtl/Inst_Ps2Interface/FSM_onehot_state_reg[0]_1    |                                                              |                3 |              8 |         2.67 |
+|  clk_wiz_0_inst/inst/clk_out1 | Inst_MouseCtl/Inst_Ps2Interface/load_rx_data                 |                                                              |                3 |              8 |         2.67 |
+|  clk_wiz_0_inst/inst/clk_out1 | Inst_MouseCtl/write_data                                     |                                                              |                3 |              8 |         2.67 |
+|  clk_wiz_0_inst/inst/clk_out1 | Inst_MouseCtl/Inst_Ps2Interface/frame[9]_i_1_n_0             |                                                              |                2 |             10 |         5.00 |
+|  clk_wiz_0_inst/inst/clk_out1 | Inst_MouseCtl/Inst_Ps2Interface/delay_20us_count[10]_i_2_n_0 | Inst_MouseCtl/Inst_Ps2Interface/delay_20us_count[10]_i_1_n_0 |                3 |             11 |         3.67 |
+|  clk_wiz_0_inst/inst/clk_out1 |                                                              | eqOp5_in                                                     |                3 |             12 |         4.00 |
+|  clk_wiz_0_inst/inst/clk_out1 | eqOp5_in                                                     | v_cntr_reg0                                                  |                3 |             12 |         4.00 |
+|  clk_wiz_0_inst/inst/clk_out1 | Inst_MouseCtl/x_new_reg_n_0                                  |                                                              |                4 |             12 |         3.00 |
+|  clk_wiz_0_inst/inst/clk_out1 | Inst_MouseCtl/y_new_reg_n_0                                  |                                                              |                3 |             12 |         4.00 |
+|  clk_wiz_0_inst/inst/clk_out1 | Inst_MouseCtl/Inst_Ps2Interface/delay_100us_count[0]_i_2_n_0 | Inst_MouseCtl/Inst_Ps2Interface/clear                        |                4 |             14 |         3.50 |
+|  clk_wiz_0_inst/inst/clk_out1 |                                                              | Inst_MouseCtl/reset_timeout_cnt_reg_n_0                      |                5 |             24 |         4.80 |
+|  clk_wiz_0_inst/inst/clk_out1 | v_sync_reg                                                   |                                                              |               14 |             24 |         1.71 |
+|  clk_wiz_0_inst/inst/clk_out1 |                                                              | Inst_MouseCtl/reset_periodic_check_cnt__0                    |                8 |             27 |         3.38 |
+|  clk_wiz_0_inst/inst/clk_out1 |                                                              | game_ctrl_inst/board[0,0][1]_i_1_n_0                         |               17 |             50 |         2.94 |
+|  piece_x__0                   |                                                              |                                                              |               18 |             60 |         3.33 |
+|  clk_wiz_0_inst/inst/clk_out1 |                                                              |                                                              |               74 |            188 |         2.54 |
++-------------------------------+--------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+--------------+
+
+

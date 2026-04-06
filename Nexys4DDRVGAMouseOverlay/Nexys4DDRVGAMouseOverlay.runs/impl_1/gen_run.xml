@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1748186525">
+  <File Type="ROUTE-PWR" Name="vga_ctrl_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="vga_ctrl.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="vga_ctrl_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="vga_ctrl_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="vga_ctrl.msk"/>
+  <File Type="ROUTE-CLK" Name="vga_ctrl_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="vga_ctrl.vdi"/>
+  <File Type="BG-BIT" Name="vga_ctrl.bit"/>
+  <File Type="BG-DRC" Name="vga_ctrl.drc"/>
+  <File Type="BG-BGN" Name="vga_ctrl.bgn"/>
+  <File Type="BG-BIN" Name="vga_ctrl.bin"/>
+  <File Type="BITSTR-RBT" Name="vga_ctrl.rbt"/>
+  <File Type="BITSTR-NKY" Name="vga_ctrl.nky"/>
+  <File Type="BITSTR-BMM" Name="vga_ctrl_bd.bmm"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="vga_ctrl_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="vga_ctrl.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="vga_ctrl.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="vga_ctrl.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="vga_ctrl_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="vga_ctrl.hwdef"/>
+  <File Type="PLACE-IO" Name="vga_ctrl_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="vga_ctrl_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="vga_ctrl_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="vga_ctrl_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="vga_ctrl_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="vga_ctrl_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="vga_ctrl_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="vga_ctrl_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="vga_ctrl_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="vga_ctrl_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="vga_ctrl_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="vga_ctrl_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="vga_ctrl_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="vga_ctrl_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="vga_ctrl_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="vga_ctrl_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="vga_ctrl_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="vga_ctrl_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="vga_ctrl_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="vga_ctrl_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="vga_ctrl_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="vga_ctrl_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="vga_ctrl_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="vga_ctrl_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="vga_ctrl_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="vga_ctrl_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="vga_ctrl_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="vga_ctrl_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="vga_ctrl_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="vga_ctrl.pdi"/>
+  <File Type="RCFI_FILE" Name="vga_ctrl.rcfi"/>
+  <File Type="CFI_FILE" Name="vga_ctrl.cfi"/>
+  <File Type="RNPI_FILE" Name="vga_ctrl.rnpi"/>
+  <File Type="NPI_FILE" Name="vga_ctrl.npi"/>
+  <File Type="RBD_FILE" Name="vga_ctrl.rbd"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Basys3_Basic_Demo_1/MouseCtl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Basys3_Basic_Demo_1/Basys3_Basic_Demo_1/MouseCtl.vhd"/>
+        <Attr Name="ImportTime" Val="1425443891"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Basys3_Basic_Demo_1/MouseDisplay.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Basys3_Basic_Demo_1/Basys3_Basic_Demo_1/MouseDisplay.vhd"/>
+        <Attr Name="ImportTime" Val="1425443891"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Basys3_Basic_Demo_1/Ps2Interface.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Basys3_Basic_Demo_1/Basys3_Basic_Demo_1/Ps2Interface.vhd"/>
+        <Attr Name="ImportTime" Val="1425443891"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/char_to_matrix.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/game_controller.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/game_status_display.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/piece_render.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/text_renderer.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Basys3_Basic_Demo_1/vga_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Basys3_Basic_Demo_1/Basys3_Basic_Demo_1/vga_ctrl.vhd"/>
+        <Attr Name="ImportTime" Val="1425443891"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Basys3_Basic_Demo_1/clk_wiz_0.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Basys3_Basic_Demo_1/Basys3_Basic_Demo_1/clk_wiz_0.vhd"/>
+        <Attr Name="ImportTime" Val="1425443891"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Basys3_Basic_Demo_1/clk_wiz_0_clk_wiz.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Basys3_Basic_Demo_1/Basys3_Basic_Demo_1/clk_wiz_0_clk_wiz.vhd"/>
+        <Attr Name="ImportTime" Val="1425443891"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="vga_ctrl"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/XDC/Nexys4DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../XDC/Nexys4DDR_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1421972973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/XDC/Nexys4DDR_Master.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+</GenRun>
